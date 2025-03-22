@@ -41,7 +41,7 @@ TIME = int(os.environ.get("TIME", "180"))
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002244510477"))
+FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "0"))
 #put 0 to disable
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))#put 0 to disable
 FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "0"))#put 0 to disable
@@ -54,7 +54,7 @@ FORCE_PIC = os.environ.get("FORCE_PIC", "https://telegra.ph/file/e292b12890b8b4b
 
 # Turn this feature on or off using True or False put value inside  ""
 # TRUE for yes FALSE if no 
-TOKEN = True if os.environ.get('TOKEN', "True") == "True" else False 
+TOKEN = False if os.environ.get('TOKEN', "True") == "True" else False 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "api.modijiurl.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "258e977dc65a3ecb20fe647a913965ff55bf9b65")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 600)) # Add time in seconds
